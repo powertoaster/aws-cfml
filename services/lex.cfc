@@ -39,7 +39,7 @@ component {
         var requestSettings = api.resolveRequestSettings( argumentCollection = arguments );
 
         var apiResponse = apiCall(
-            deleteSession,
+            requestSettings,
             'DELETE',
             '/bots/#BotId#/botAliases/#BotAliasId#/botLocales/#LocaleId#/sessions/#SessionId#'
         );
@@ -71,7 +71,7 @@ component {
         var requestSettings = api.resolveRequestSettings( argumentCollection = arguments );
 
         var apiResponse = apiCall(
-            getSession,
+            requestSettings,
             'GET',
             '/bots/#BotId#/botAliases/#BotAliasId#/botLocales/#LocaleId#/sessions/#SessionId#'
         );
@@ -113,7 +113,7 @@ component {
 
 
         var apiResponse = apiCall(
-            putSession,
+            requestSettings,
             'POST',
             '/bots/#BotId#/botAliases/#BotAliasId#/botLocales/#LocaleId#/sessions/#SessionId#'
         );
